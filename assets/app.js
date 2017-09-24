@@ -76,7 +76,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 	var convertedTime = moment(trainStart, timeFormat);
 
 	// Solve for minutes until next train
-	var trainNext = ;
+	var trainNext;
 	var trainMinAway = moment(convertedTime).diff(moment(), "minutes");
 
 

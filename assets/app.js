@@ -67,9 +67,8 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
 	// Making the train start time formated
 	// var trainStartPretty = moment.unix(trainStart).format("HH:mm");
-	var tryThis = trainStartPretty
+	// var tryThis = trainStartPretty
 	// var trainStartPretty = moment(trainStart).add(trainRate, "minutes");
-	var abcde = moment(trainStartPretty).format("HH:mm a");
 	
 	var timeFormat = "HH:mm";
 	
@@ -89,7 +88,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 			"</td><td>"
 				+ trainRate +
 			"</td><td>"
-				+ abcde +
+				+ trainStart +
 			"</td><td>"
 				+ trainMinAway +
 			"</td></tr>");
